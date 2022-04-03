@@ -1,0 +1,54 @@
+doctype html
+html
+    head
+        title My Dance Website 
+        style 
+            include ../static/style.css 
+    body 
+        nav#navbar
+            ul
+                div#logo
+                    img(src="/static/images/logo.png")
+                    | AND
+                li #[a(href="/") Home ]
+                li #[a(href="/aboutus") About Us]
+                li #[a(href="/courses") Courses ]
+                li #[a(href="/contactus") Contact Us ]
+        section#introduction 
+            div Welcome to my Dance Website
+            div.small Reach your Dance Goals Here!
+        section#mission 
+            h3 Our Mission 
+            div.card
+                h2 Dedication   
+                div.card-box
+                    div.card-img
+                        img(src='/static/images/1.png')
+                    div.card-content
+                        p Quality Dance Instruction 
+            div.card
+                h2 Value
+                div.card-box
+                    div.card-img
+                        img(src='/static/images/2.png')
+                    div.card-content
+                        p Find best Dance Mentors here! 
+            div.card
+                h2 Inspiration
+                div.card-box
+                    div.card-img
+                        img(src='/static/images/3.png')
+                    div.card-content
+                        p We Dance to Tell a Story!
+        section#sponsors 
+            h3 Our Sponsors
+            div#sponsorslogos
+                img(src="/static/images/apple-logo.png", alt="Sponsor Logo", class='spImage')
+                img(src="/static/images/microsoft-logo.png", alt="Sponsor Logo", class='spImage')
+                img(src="/static/images/hpLogoBW.png", alt="Sponsor Logo", class='spImage3')
+                img(src="/static/images/skype-icon.png", alt="Sponsor Logo", class='spImage4')
+        footer#footersection 
+            | Copyright &#169; 2022 &nbsp;<a href="https://anuragnatoo.github.io/" target='_blank'>AN</a>
+        script 
+            include ../static/index.js
+// ../ means change directory (cd ..)

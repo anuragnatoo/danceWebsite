@@ -1,0 +1,41 @@
+extends base.pug
+
+block scripts
+    script(src="/static/index.js") 
+//- block style
+//-     style 
+//-         include ../static/style.css
+block content
+    section#introduction 
+        div Welcome to my Dance Website
+        div.small Reach your Dance Goals Here!
+    section#mission 
+        h3 Our Mission 
+        div.card
+            h2 Dedication   
+            div.card-box
+                div.card-img
+                    img(src='/static/images/1.png')
+                div.card-content
+                    p Quality Dance Instruction 
+        div.card
+            h2 Value
+            div.card-box
+                div.card-img
+                    img(src='/static/images/2.png')
+                div.card-content
+                    p Find best Dance Mentors here! 
+        div.card
+            h2 Inspiration
+            div.card-box
+                div.card-img
+                    img(src='/static/images/3.png')
+                div.card-content
+                    p We Dance to Tell a Story!
+    section#sponsors 
+        h3 Our Sponsors
+        div#sponsorslogos
+            img(src="/static/images/apple-logo.png", alt="Sponsor Logo", class='spImage')
+            img(src="/static/images/microsoft-logo.png", alt="Sponsor Logo", class='spImage')
+            img(src="/static/images/hpLogoBW.png", alt="Sponsor Logo", class='spImage3')
+            img(src="/static/images/skype-icon.png", alt="Sponsor Logo", class='spImage4')
